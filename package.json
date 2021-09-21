@@ -1,0 +1,28 @@
+{
+  "name": "SMS-Practice-Reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sendSms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryelow94/SMS-Practice-Reminder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryelow94/SMS-Practice-Reminder/issues"
+  },
+  "homepage": "https://github.com/ryelow94/SMS-Practice-Reminder#readme",
+  "devDependencies": {
+    "node-fetch": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "twilio": "^3.67.2"
+  }
+}
