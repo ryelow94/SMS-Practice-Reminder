@@ -5,6 +5,7 @@ const MessagingResponse = require("twilio").twiml.MessagingResponse;
 const bodyParser = require("body-parser");
 const { twilioAPI } = require("./twilioAPI.js");
 const initialSms = require("./sendSms.js");
+const PORT = process.env.PORT || 1338
 
 console.log("twilio API is: ", twilioAPI);
 
@@ -44,6 +45,6 @@ app.post("/sms", async (req, res) => {
   res.end(twiml.toString());
 });
 
-http.createServer(app).listen(1338, () => {
+http.createServer(app).listen(PORT, () => {
   console.log("Express server listening on port 1338");
 });
