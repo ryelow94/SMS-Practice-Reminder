@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <title>Practice Scheduler</title>
   </head>
   <body>
-    <h1>Practice Scheduler</h1>
-    <label for="number">Enter your phone Number</label>
-    <input type="text" id="number" name="number" required>
-    <button id="fetch-send-sms-btn"> Enter</button>
+    <div class="has-background-white-ter">
+      <h1 class="is-size-1 has-text-primary has-text-centered">
+        Practice Scheduler
+      </h1>
+      <label class="is-size-3 has-text-primary" for="number"
+        >Enter your phone Number</label
+      >
+      <input class="input" type="text" id="number" name="number" required />
+      <button class="button has-background-success" id="fetch-send-sms-btn">
+        Enter
+      </button>
+      <button class="button has-background-success" id="info-btn">
+        Info
+      </button>
+    </div>
+    <div id="text-container">
+
+    </div>
     <script src="button.js"></script>
   </body>
 </html>
-

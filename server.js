@@ -1,5 +1,5 @@
 const http = require("http");
-const fetch = require("node-fetch");
+const dotenv = require("dotenv").config()
 const express = require("express");
 const MessagingResponse = require("twilio").twiml.MessagingResponse;
 const bodyParser = require("body-parser");
@@ -23,7 +23,7 @@ app.post("/smsStart/:userNumber", async (req, res) => {
 })
 
 app.post("/sms", async (req, res) => {
-  console.log(req.body.Body);
+  console.log(req.body);
   const twiml = new MessagingResponse();
   if (req.body.Body == "Yes" || req.body.Body == "yes") {
     twiml.message("Good Job Keep it Up!");
@@ -32,7 +32,7 @@ app.post("/sms", async (req, res) => {
     setTimeout(() => {
       console.log("we are sending a follow up");
       twilioAPI
-        .postMessage("Hello, here is another reminder to practice!")
+        .postMessage("Hello, here is another reminder to practice!", req.body.From)
         .catch(console.error)
         .then(console.log);
     }, 2000);
