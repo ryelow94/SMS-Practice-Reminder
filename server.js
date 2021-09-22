@@ -29,7 +29,7 @@ app.post("/sms", async (req, res) => {
   if (req.body.Body == "Yes" || req.body.Body == "yes") {
     twiml.message("Good Job Keep it Up!");
   } else if (req.body.Body == "No" || req.body.Body == "no") {
-    await twiml.message("We Will Remind You In 30 seconds");
+    await twiml.message("We will remind you in 30 seconds");
     setTimeout(() => {
       console.log("we are sending a follow up");
       twilioAPI

@@ -14,6 +14,7 @@ fetchSmsBtn.addEventListener("click", async () => {
     console.log(response);
   }
 });
+
 var infoBtn = document.getElementById("info-btn");
 infoBtn.addEventListener("click", handleClick);
 
