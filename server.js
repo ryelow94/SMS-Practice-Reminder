@@ -29,14 +29,14 @@ app.post("/sms", async (req, res) => {
   if (req.body.Body == "Yes" || req.body.Body == "yes") {
     twiml.message("Good Job Keep it Up!");
   } else if (req.body.Body == "No" || req.body.Body == "no") {
-    await twiml.message("We Will Remind You In 25 seconds");
+    await twiml.message("We Will Remind You In 30 seconds");
     setTimeout(() => {
       console.log("we are sending a follow up");
       twilioAPI
         .postMessage("Hello, here is another reminder to practice!", req.body.From)
         .catch(console.error)
         .then(console.log);
-    }, 2000);
+    }, 30000);
   } else {
     twiml.message("Please respond with a vaild message");
   }

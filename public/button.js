@@ -18,14 +18,7 @@ var infoBtn = document.getElementById("info-btn");
 infoBtn.addEventListener("click", handleClick);
 
 function handleClick() {
-  var textDiv = document.getElementById("text-container");
-  var explainH1 = document.createElement("h1");
+  var explainH1 = document.getElementById("info");
+  explainH1.classList = "show has-text-primary is-size-6 has-text-centered"
 
-  explainH1.classList = "is-size-3 has-text-dark";
-  textDiv.classList = "has-background-primary";
-
-  explainH1.textcontent =
-    "By entering your phone number, you will receive a text message asking if you have completed your practice goals for the day";
-
-  textDiv.appendChild(explainH1);
 }
