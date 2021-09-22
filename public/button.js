@@ -10,8 +10,7 @@ fetchSmsBtn.addEventListener("click", async () => {
   } else {
     const response = await fetch("smsStart/" + userNumber, {
       method: "POST",
-    }).then((response) => response.json());
-    console.log(response);
+    })
   }
 });
 
@@ -20,6 +19,6 @@ infoBtn.addEventListener("click", handleClick);
 
 function handleClick() {
   var explainH1 = document.getElementById("info");
-  explainH1.classList = "show has-text-primary is-size-6 has-text-centered"
+  explainH1.classList = "show has-text-primary is-size-5 has-text-centered"
 
 }
