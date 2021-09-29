@@ -24,7 +24,7 @@ app.post("/smsStart/:userNumber", async (req, res) => {
 })
 
 app.post("/sms", async (req, res) => {
-  console.log(req.body);
+  console.log(req.body.Body);
   const twiml = new MessagingResponse();
   if (req.body.Body == "Yes" || req.body.Body == "yes") {
     twiml.message("Good Job Keep it Up!");
