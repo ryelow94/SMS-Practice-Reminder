@@ -5,7 +5,7 @@ const client = require("twilio")(accountSid, authToken);
 function initialSms(userNumber) {
   client.messages
     .create({
-      body: 'Have you completed your practice goals for the day? If yes, respond with "yes". Otherwise, respond with "no" and we will remind you later!',
+      body: 'Whats up little bitch?',
       from: "+12817646556",
       to: userNumber, //phone
     })
