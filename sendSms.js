@@ -5,7 +5,7 @@ const client = require("twilio")(accountSid, authToken);
 function initialSms(userNumber) {
   client.messages
     .create({
-      body: 'Do you remember when ryan fell off his bike at greenstone? I do, he"ll wish that was the worst thing to happen to him',
+      body: 'how about when he got poison oak at winchester? I know everything. I will find you all',
       from: "+12817646556",
       to: userNumber, //phone
     })
