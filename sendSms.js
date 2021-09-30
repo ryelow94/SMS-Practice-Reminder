@@ -5,7 +5,7 @@ const client = require("twilio")(accountSid, authToken);
 function initialSms(userNumber) {
   client.messages
     .create({
-      body: 'Don"t hide like a little bitch that we all know you are. I would"t go into your garage if i were you.',
+      body: 'I"ll be wating on douglas blvd tommorow if a bitch feels he"s ready',
       from: "+12817646556",
       to: userNumber, //phone
     })
