@@ -3,6 +3,8 @@
 ## Description
 This app is designed to send and recieve SMS messages from the user upon entering their phone number into the web page. The original intention of the webpage was to remind the user to complete practice goals for learning an instrument, but it can really be used as a reminder for anything that needs to be completed in a day. Furthermore, the webpage can be used to automatically remind other people that the user enters in the the input field because any phone number can be submitted. This provides an easy way to automate the process of completing and reminding others of goals or responsiblities they may have. Once the user enters their phone number, they will receive a text message asking if they have completed their practice goals for the day. If yes, the app will not remind the user again until they reenter their phone number into the web page. If no, the app will send a reminder message in 2 minutes after the user responds. The app will continue to send reminders so long as the user responds with "no".
 
+![SMS](./SMS.png)
+
 ## Technologies 
 * Express Server 
 * JavaScript 
